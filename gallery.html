@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | ArsProject</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>ArsProject</h1>
+    <nav>
+      <a href="index.html">About</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="facts.html">Facts</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Photo Gallery</h2>
+
+      <!-- Preview area -->
+      <div id="image">
+        Hover over an image below to display here.
+      </div>
+
+      <!-- Thumbnails -->
+      <div class="thumbs">
+        <img src="https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=60"
+             alt="A laptop on a desk"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=60"
+             alt="Code displayed on a screen"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=60"
+             alt="Mountains and a calm lake"
+             onmouseover="upDate(this)"
+             onmouseout="undo()">
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ArsProject</p>
+  </footer>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
